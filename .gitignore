@@ -7,3 +7,14 @@ cmake_install.cmake
 install_manifest.txt
 compile_commands.json
 CTestTestfile.cmake
+*.xml
+*.mk
+*.properties
+code/nbproject/private/c_standard_headers_indexer.c
+code/nbproject/private/cpp_standard_headers_indexer.cpp
+code/nbproject/Package-Release.bash
+*.bash
+*.inc
+*.d
+*.o
+*.exe

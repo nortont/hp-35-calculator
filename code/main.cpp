@@ -31,7 +31,9 @@ int main(int argc, char** argv) {
         while (expression >> token) {
             if (isdigit(token[0])) {
                 stack.push(atof(token.data()));
+                cout<<stack.displayStack();
             } else if (token == "+") { // other arithmetic ops similar
+                cout<<stack.displayStack();
                 double x = stack.pop();
                 double y = stack.pop();
                 stack.push(y + x);

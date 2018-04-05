@@ -13,28 +13,20 @@ class HPStack {
 public:
     HPStack();
     HPStack(const HPStack& orig);
-    virtual ~HPStack();
+    virtual ~HPStack();    
+
     
-//    void setX(int x);
-//    void setY(int y);
-//    void setZ(int z);
-//    void setT(int t);
-//    
-//    int getX();
-//    int getY();
-//    int GetZ();
-//    int getT();
-    
-    int push(int x);
-    int pop();
+    double push(int x);
+    double pop();
     int peek();
+    std::string displayStack();
     
 private:
-    int registers[4];
-    const int X=0;
-    const int Y=1;
-    const int Z=2;
-    const int T=3;
+   
+    int X;
+    int Y;
+    int Z;
+    int T;
 };
 
 #endif /* HPSTACK_H */
